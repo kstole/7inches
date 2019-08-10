@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.miles.inches.MainActivity" >
+
+    <Button
+        android:id="@+id/connectbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="connectPressed"
+        android:text="@string/connectbutt"
+        android:drawableLeft="@drawable/chassis48" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/title" />
+    
+    <ImageButton
+    	android:id="@+id/killallmotors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:onClick="killPressed"
+    	android:src="@drawable/stop48"/>
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/killallmotors"
+        android:layout_alignLeft="@+id/killallmotors"
+        android:layout_marginBottom="20dp"
+        android:onClick="forwardPressed"
+        android:src="@drawable/forward48" />
+
+    <ImageButton
+        android:id="@+id/backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/killallmotors"
+        android:layout_below="@+id/rightspin"
+        android:layout_marginTop="20dp"
+        android:onClick="backwardPressed"
+        android:src="@drawable/backward48" />
+
+    <ImageButton
+        android:id="@+id/leftspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/killallmotors"
+        android:layout_toLeftOf="@+id/killallmotors"
+        android:layout_marginRight="20dp"
+        android:onClick="leftSpinPressed"
+        android:src="@drawable/leftspin48" />
+
+    <ImageButton
+        android:id="@+id/rightspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/killallmotors"
+        android:layout_toRightOf="@+id/killallmotors"
+        android:layout_marginLeft="20dp"
+        android:onClick="rightSpinPressed"
+        android:src="@drawable/rightspin48" />
+
+    <ImageButton
+        android:id="@+id/rightbackwardcurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rightspin"
+        android:layout_alignTop="@+id/backward"
+        android:onClick="rightBackwardCurvePressed"
+        android:src="@drawable/rightbackwardcurve48" />
+
+    <ImageButton
+        android:id="@+id/leftbackwardcurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backward"
+        android:layout_alignRight="@+id/leftspin"
+        android:onClick="leftBackwardCurvePressed"
+        android:src="@drawable/leftbackwardcurve48" />
+
+    <ImageButton
+        android:id="@+id/leftforwardcurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/leftspin"
+        android:layout_alignBottom="@+id/forward"
+        android:onClick="leftForwardCurvePressed"
+        android:src="@drawable/leftforwardcurve48" />
+
+    <ImageButton
+        android:id="@+id/rightforwardcurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rightspin"
+        android:layout_alignBottom="@+id/forward"
+        android:onClick="rightForwardCurvePressed"
+        android:src="@drawable/rightforwardcurve48" />
+
+</RelativeLayout>

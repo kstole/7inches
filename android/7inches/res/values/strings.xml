@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">7inches</string>
+    <string name="title">A product of the 8 Miles HWeekend Group</string>
+    <string name="action_settings">Settings</string>
+    <string name="rfor">R Forward</string>
+    <string name="lfor">L Forward</string>
+    <string name="rback">R Backward</string>
+    <string name="lback">L Backward</string>
+    <string name="killall">Kill All Motors</string>
+    <string name="connectbutt">Connect to BT</string>
+
+</resources>
